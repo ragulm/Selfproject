@@ -1,0 +1,20 @@
+PODS:
+  - IQKeyboardManagerSwift (5.0.6)
+  - NVActivityIndicatorView (4.0.0):
+    - NVActivityIndicatorView/Presenter (= 4.0.0)
+  - NVActivityIndicatorView/Presenter (4.0.0)
+  - SkyFloatingLabelTextField (3.3.0)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - NVActivityIndicatorView
+  - SkyFloatingLabelTextField (~> 3.0)
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 02bfbb0dff71c66d0ab77d80d25dfce0c3717735
+  NVActivityIndicatorView: 54c9b93b6f25a4f467512680c0c90c09a1095cf2
+  SkyFloatingLabelTextField: 771be94beca6868a6cea187f70c965ebd81d2f93
+
+PODFILE CHECKSUM: 514e8f87b573827808ba8d1c6498673831d0cb90
+
+COCOAPODS: 1.4.0
