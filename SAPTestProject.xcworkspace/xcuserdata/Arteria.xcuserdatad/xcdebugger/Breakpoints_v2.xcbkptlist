@@ -9,22 +9,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SAPTestProject/Registration/CustomRegistrationViewController.swift"
-            timestampString = "538464624.77074"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
-            landmarkName = "Registration(uName:pSWord:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "SAPTestProject/Helper/LogonHandler.m"
             timestampString = "538401502.829628"
             startingColumnNumber = "9223372036854775807"
@@ -138,7 +122,7 @@
                   moduleName = "SAPTestProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Arteria/Documents/Ragul_ML/Sample_Projects/SAPTestProject/SAPTestProject/Helper/LogonHandler.m"
-                  timestampString = "538464625.423034"
+                  timestampString = "538481066.6482379"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "160"
@@ -153,7 +137,7 @@
                   moduleName = "SAPTestProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Arteria/Documents/Ragul_ML/Sample_Projects/SAPTestProject/SAPTestProject/Helper/LogonHandler.m"
-                  timestampString = "538464625.425729"
+                  timestampString = "538481066.651469"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "161"
@@ -201,13 +185,45 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SAPTestProject/Registration/CustomRegistrationViewController.swift"
-            timestampString = "538464624.771006"
+            filePath = "SAPTestProject/Extensions/ActivityIndicator.swift"
+            timestampString = "538481063.8491679"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "SetIndicator()"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "showActivityIndicator()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SAPTestProject/Extensions/ActivityIndicator.swift"
+            timestampString = "538481063.84926"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "stopAnim(indicator:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SAPTestProject/Extensions/ActivityIndicator.swift"
+            timestampString = "538481063.849328"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "showActivityIndicator()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -218,12 +234,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SAPTestProject/Registration/CustomRegistrationViewController.swift"
-            timestampString = "538464624.7710789"
+            timestampString = "538481063.849395"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "Registration(uName:pSWord:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

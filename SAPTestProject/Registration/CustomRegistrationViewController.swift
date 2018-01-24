@@ -19,6 +19,7 @@ class CustomRegistrationViewController: UIViewController,NVActivityIndicatorView
     //Button
     @IBOutlet weak var btnSubmit: UIButton! 
     
+    @IBOutlet weak var acctivityInd: NVActivityIndicatorView!
     
     //Image View
     @IBOutlet weak var imgHeaderView: UIImageView!
@@ -35,12 +36,13 @@ class CustomRegistrationViewController: UIViewController,NVActivityIndicatorView
     var logonManager: MAFLogonNGPublicAPI?
     
     
-    
+    var indicatorTest:NVActivityIndicatorView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.SetIndicator()
+        //self.SetIndicator()
+        //self.acctivityInd.startAnimating()
         self.imgHeaderView.clipsToBounds = false
          self.imgHeaderView.layer.shadowColor = UIColor.white.cgColor
          self.imgHeaderView.layer.shadowOpacity = 1
@@ -90,12 +92,11 @@ class CustomRegistrationViewController: UIViewController,NVActivityIndicatorView
     //MARK: Indicator
     func SetIndicator() {
         let frame = CGRect(x: self.view.frame.size.width/2, y: self.view.frame.size.height/2, width: 40, height: 40)
-        self.activityIndicatorView = NVActivityIndicatorView(frame: frame)
+       self.activityIndicatorView = NVActivityIndicatorView(frame: frame)
         self.activityIndicatorView?.type = .ballClipRotate
-        self.activityIndicatorView?.color = UIColor.red
-        self.activityIndicatorView?.padding = 20
+        //self.activityIndicatorView?.backgroundColor=UIColor.red
+        self.activityIndicatorView?.color = UIColor.white
         self.view.addSubview(self.activityIndicatorView!)
-        self.activityIndicatorView?.startAnimating()
     }
     
     
@@ -111,23 +112,26 @@ class CustomRegistrationViewController: UIViewController,NVActivityIndicatorView
         }else
            
         {
-            self.activityIndicatorView?.startAnimating()
             //CommonMethods.sharedInstance().showProgressIndicator(withTitle: "Loading")
             //CommonMethod.sharedInstance.showProgressIndicatorWithTitle(title: "Loading")
-            
+             indicatorTest=self.showActivityIndicator()
+            indicatorTest?.startAnimating()
             LogonHandler.singelton().onDeviceRegister(uName, pSWord, {(
                 success) in
                 //CommonMethods.sharedInstance().hideProgressIndicator()
-                self.activityIndicatorView?.stopAnimating()
+                //self.activityIndicatorView?.stopAnimating()
+                self.stopAnim(indicator: self.indicatorTest!)
                 if(success)
                 {
                     //CommonMethods.sharedInstance().hideProgressIndicator()
-                    self.activityIndicatorView?.stopAnimating()
+                    //self.activityIndicatorView?.stopAnimating()
+                    self.stopAnim(indicator: self.indicatorTest!)
                      self.showToast(message: "Registration Successfull")
                 }
                 else{
                     //CommonMethods.sharedInstance().hideProgressIndicator()
-                    self.activityIndicatorView?.stopAnimating()
+                    //self.activityIndicatorView?.stopAnimating()
+                    self.stopAnim(indicator: self.indicatorTest!)
                     self.showToast(message: "Some Error occured OR Registration completed")
                 }
                 
